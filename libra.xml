@@ -16,7 +16,7 @@
     
   <!-- Device configuration -->
   <project path="kernel/xiaomi/libra" name="WJXXBSH/android_kernel_xiaomi_libra" revision="master" />
-  <project path="device/xiaomi/libra" name="WJXXBSH/android_device_xiaomi_libra" >
+  <project path="device/xiaomi/libra" name="WJXXBSH/android_device_xiaomi_libra" />
   <project path="vendor/xiaomi/libra" name="WJXXBSH/android_vendor_xiaomi_libra" revision="lineage-16.0" />
   <project path="hardware/sony/timekeep" name="LineageOS/android_hardware_sony_timekeep" />
   <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" />
@@ -40,9 +40,9 @@
   <project path="system/apex" name="fAiL-ix/android_system_apex" groups="pdk" /> <!-- Done! -->
   <project path="system/core" name="fAiL-ix/android_system_core" groups="pdk" /> <!-- Done! -->
   <!-- <project path="system/extras" name="fAiL-ix/android_system_extras" groups="pdk" /> -->
-  <project path="system/extras/su" name="WJXXBSH/useful_android_scripts/tree/master/su/system/extras/su" groups="pdk" /> <!-- Done! -->
+  <project path="system/extras/su" name="WJXXBSH/useful_android_scripts/tree/master/su/system/extras/su" groups="pdk" revision="master" /> <!-- Done! -->
   <project path="vendor/lineage" name="fAiL-ix/android_vendor_lineage" groups="pdk" /> <!-- Done! -->
-  <project path="vendor/lineage/addonsu" name="WJXXBSH/useful_android_scripts/tree/master/su/vendor/lineage/addonsu" groups="pdk" /> <!-- Done! -->
+  <project path="vendor/lineage/addonsu" name="WJXXBSH/useful_android_scripts/tree/master/su/vendor/lineage/addonsu" groups="pdk" revision="master" /> <!-- Done! -->
   <project path="external/noto-fonts" name="fAiL-ix/android_external_noto-fonts" groups="pdk" /> <!-- Done! -->
   
   <!-- Local manifest -->
