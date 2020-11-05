@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project name="WJXXBSH/android_kernel_xiaomi_libra" path="kernel/xiaomi/libra" remote="github" revision="master" />
-  <project name="WJXXBSH/android_device_xiaomi_libra" path="device/xiaomi/libra" remote="github" />
-  <project name="WJXXBSH/android_vendor_xiaomi_libra" path="vendor/xiaomi/libra" remote="github" revision="lineage-16.0" />
-  <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" remote="github" />
-  <project name="LineageOS/android_hardware_xiaomi" path="hardware/xiaomi" remote="github" />
+  <project name="WJXXBSH/android_kernel_xiaomi_libra" path="kernel/xiaomi/libra" revision="master" />
+  <project name="WJXXBSH/android_device_xiaomi_libra" path="device/xiaomi/libra" />
+  <project name="WJXXBSH/android_vendor_xiaomi_libra" path="vendor/xiaomi/libra" revision="lineage-16.0" />
+  <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" />
+  <project name="LineageOS/android_hardware_xiaomi" path="hardware/xiaomi" />
+  
+  <project name="fAiL-ix/manifest_xiaomi_libra" path=".repo/local_manifests" revision="master" />
 </manifest>
