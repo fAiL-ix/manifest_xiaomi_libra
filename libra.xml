@@ -6,5 +6,5 @@
   <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" />
   <project name="LineageOS/android_hardware_xiaomi" path="hardware/xiaomi" />
   
-  <project name="fAiL-ix/manifest_xiaomi_libra" path=".repo/local_manifests" revision="master" />
+  <project name="fAiL-ix/manifest_xiaomi_libra" path=".repo/local_manifests" />
 </manifest>
