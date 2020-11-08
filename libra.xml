@@ -1,51 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <!-- Remove projects we override -->
-  <remove-project path="bootable/recovery" name="LineageOS/android_bootable_recovery" groups="pdk" />
-  <remove-project path="build/make" name="LineageOS/android_build" groups="pdk" />
-  <remove-project path="frameworks/base" name="LineageOS/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" />
-  <remove-project path="packages/apps/Bluetooth" name="LineageOS/android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" />
-  <remove-project path="packages/apps/Settings" name="LineageOS/android_packages_apps_Settings" groups="pdk-fs" />
-  <remove-project path="packages/apps/Updater" name="LineageOS/android_packages_apps_Updater" groups="pdk" />
-  <remove-project path="system/apex" name="platform/system/apex" groups="pdk" remote="aosp" />
-  <remove-project path="system/core" name="LineageOS/android_system_core" groups="pdk" />
-  <!-- <remove-project path="system/extras" name="LineageOS/android_system_extras" groups="pdk" /> -->
-  <remove-project path="system/sepolicy" name="LineageOS/android_system_sepolicy" groups="pdk" />
-  <remove-project path="vendor/lineage" name="LineageOS/android_vendor_lineage" groups="pdk" />
-  <remove-project path="external/noto-fonts" name="platform/external/noto-fonts" groups="pdk" />
-    
-  <!-- Device configuration -->
-  <project path="kernel/xiaomi/libra" name="WJXXBSH/android_kernel_xiaomi_libra" revision="master" />
-  <project path="device/xiaomi/libra" name="WJXXBSH/android_device_xiaomi_libra" />
-  <project path="vendor/xiaomi/libra" name="WJXXBSH/android_vendor_xiaomi_libra" revision="lineage-16.0" />
-  <project path="hardware/sony/timekeep" name="LineageOS/android_hardware_sony_timekeep" />
-  <project path="hardware/xiaomi" name="LineageOS/android_hardware_xiaomi" />
+  <project name="WJXXBSH/android_kernel_xiaomi_libra" path="kernel/xiaomi/libra" revision="master" />
+  <project name="WJXXBSH/android_device_xiaomi_libra" path="device/xiaomi/libra" />
+  <project name="WJXXBSH/android_vendor_xiaomi_libra" path="vendor/xiaomi/libra" revision="lineage-16.0" />
+  <project name="LineageOS/android_hardware_sony_timekeep" path="hardware/sony/timekeep" />
+  <project name="LineageOS/android_hardware_xiaomi" path="hardware/xiaomi" />
   
-  <!-- Overrides -->
-  <!-- Custom build -->
-  <project path="bootable/recovery" name="fAiL-ix/android_bootable_recovery" groups="pdk" /> <!-- Done! -->
-  <project path="build/make" name="fAiL-ix/android_build" groups="pdk" > <!-- Done! -->
-    <copyfile src="core/root.mk" dest="Makefile" />
-    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
-    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
-    <linkfile src="core" dest="build/core" />
-    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
-    <linkfile src="target" dest="build/target" />
-    <linkfile src="tools" dest="build/tools" />
-  </project>
-  <project path="frameworks/base" name="fAiL-ix/android_frameworks_base" groups="pdk-cw-fs,pdk-fs" /> <!-- Done! -->
-  <project path="packages/apps/Bluetooth" name="fAiL-ix/android_packages_apps_Bluetooth" groups="pdk-cw-fs,pdk-fs" /> <!-- Done! -->
-  <project path="packages/apps/Settings" name="fAiL-ix/android_packages_apps_Settings" groups="pdk-fs" /> <!-- Done! -->
-  <project path="packages/apps/Updater" name="fAiL-ix/android_packages_apps_Updater" groups="pdk" /> <!-- Done! -->
-  <project path="system/apex" name="fAiL-ix/android_system_apex" groups="pdk" /> <!-- Done! -->
-  <project path="system/core" name="fAiL-ix/android_system_core" groups="pdk" /> <!-- Done! -->
-  <!-- <project path="system/extras" name="fAiL-ix/android_system_extras" groups="pdk" /> -->
-  <!-- <project path="system/extras/su" name="WJXXBSH/useful_android_scripts/tree/master/su/system/extras/su" groups="pdk" revision="master" /> --> <!-- Done! -->
-  <project path="system/sepolicy" name="fAiL-ix/android_system_sepolicy" groups="pdk" /> <!-- Done! -->
-  <project path="vendor/lineage" name="fAiL-ix/android_vendor_lineage" groups="pdk" /> <!-- Done! -->
-  <!-- <project path="vendor/lineage/addonsu" name="WJXXBSH/useful_android_scripts/tree/master/su/vendor/lineage/addonsu" groups="pdk" revision="master" /> --> <!-- Done! -->
-  <project path="external/noto-fonts" name="fAiL-ix/android_external_noto-fonts" groups="pdk" /> <!-- Done! -->
-  
-  <!-- Local manifest -->
-  <project path=".repo/local_manifests/" name="fAiL-ix/manifest_xiaomi_libra" groups="pdk,tradefed"/>
+  <project name="fAiL-ix/manifest_xiaomi_libra" path=".repo/local_manifests" />
 </manifest>
