@@ -31,4 +31,4 @@ In our example it would be:
 
 ## Using a Docker image to build
 
-You can use [my DOCKERFILE]() to create a docker image which has all the neccessary dependecies which are needed to build this ROM.
+You can use [my dockerfile](https://github.com/fAiL-ix/docker-lineageos) to create a docker image which has all the neccessary dependecies which are needed to build this ROM.
